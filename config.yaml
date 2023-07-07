@@ -1,0 +1,45 @@
+batch_size: 5
+beta: 0.999
+data: ./../data/kitti_vo_256_with_depth/
+decay_rate: 0.7
+decay_step: 200000
+
+depth_name: DispResNet
+epochs: 200
+evaluate: False
+flownet_name: HALFlow
+flag_big_radius: 1
+
+index_num: 8192
+is_training: True
+
+kernel_shape: 1
+layers: 1
+
+load_weights_folder: ./pretrained_weight/sc_depth/
+
+loss_weight_dc: 0.1
+loss_weight_ods: 0.1
+chamfer_loss_weight: 1
+curvature_loss_weight: 0.3
+lr: 0.001
+momentum: 0.9
+multi_gpu: False
+
+name: train
+num_points: 2048
+pose_name: PoseResNet
+pretrained_disp: ./pretrained_weight/SC_depth/dispnet_model_best.pth.tar
+pretrained_posenet: ./pretrained_weight/SC_depth/exp_pose_model_best.pth.tar
+
+resnet_layers: 50
+resume: True
+resume_name: txy/PointConv_665_0.0391.pth
+save_path: ./../checkpoints/
+seed: 0
+sequence_length: 3
+test_batch_size: 2
+test_data_path: ./../data/kitti_rm_ground
+test_period: 1
+weight_decay: 0
+workers: 4
