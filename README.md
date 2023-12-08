@@ -44,7 +44,7 @@ Set `data` in the configuration file to the path where your training data is sav
 python train.py config.yaml
 ```
 
-Our pre-trained model is provided [here](https://github.com/IRMVLab/3DUnMonoFlow/tree/main/pretrained_weight/txy) for download.
+Our pre-trained models are provided [here](https://drive.google.com/drive/folders/1fA1LHxJhLHzkqAmCOtfe5mMkDHRN5RQS?usp=sharing) for download.
 
 ### Evaluate
 
